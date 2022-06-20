@@ -14,10 +14,10 @@
 
 body {
     /* 先套用 Noto Sans TC 這個 思源黑體 */
-    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+    font-family: 'Baloo Tamma 2';
 }
 
-.font-primary{
+.font-primary {
     color: $font-primary;
 }
 
@@ -38,26 +38,115 @@ a {
     text-decoration: none;
 }
 
-.container{
+.container {
     max-width: 1160px;
     margin: 0 auto;
 
 }
 
-.navbar{
+.navbar {
 
-    &-brand{
+    &-brand {
         width: 111px;
     }
 
-    &-login-btn{
+    &-login-btn {
         width: 96px;
-        background: $primary !important;
+        background: $primary  !important;
     }
 }
 
-.tag{
-    background: #858377;
-    border-radius: 4px;
-    color:white;
+
+
+.product {
+    background: #F8F9FA;
+
+    &-name {
+        font-size: 2rem;
+        letter-spacing: 3px;
+        line-height: 1.46875;
+        font-weight: bold;
+        color: rgba(73, 72, 70, 1)
+    }
+
+    &-tag {
+        background: #858377;
+        border-radius: 4px;
+        color: white;
+        font-size: 0.75rem;
+        line-height: 1, 5;
+    }
+
+}
+
+.sponsor {
+
+    &-target {
+        font-size: 0.875rem;
+    }
+
+    &-finished {
+        font-size: 2rem;
+        line-height: 1.75;
+        font-weight: bold;
+        color: #494846;
+    }
+
+    &-count-header {
+        font-size: 0.875rem;
+        color: #636057;
+        line-height: 1.428;
+
+    }
+
+    &-counter {
+        font-size: 2rem;
+        line-height: 1.75;
+        font-weight: bold;
+    }
+
+    &-logo {
+
+        width: 24px;
+    }
+
+    &-reminder {
+        font-size: 1rem;
+        line-height: 1.5;
+        background: white;
+        color: #636057;
+        font-weight: bold;
+
+    }
+
+    &-btn {
+        background: $primary;
+        text-align: center;
+        font-size: 1.25rem;
+        line-height: 1.25;
+        font-weight: bold;
+        color: #636057;
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+    }
+
+
+    &-social {}
+
+
+    &-follow,
+    &-share {
+        color: #858377;
+        border: 2px solid #858377;
+        font-size: 1.25rem;
+
+        i {
+            line-height: 1.45;
+        }
+    }
+
+
+
+
 }

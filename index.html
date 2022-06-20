@@ -8,14 +8,25 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-        </script>
+        </script> -->
     <link rel="stylesheet" href="./css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/all.js"></script>
+    <script src="https://kit.fontawesome.com/da3a33ef72.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Baloo Tamma 2' rel='stylesheet'>
+    <script>
+const triggerTabList = document.querySelectorAll('#myTab button')
+triggerTabList.forEach(triggerEl => {
+  const tabTrigger = new bootstrap.Tab(triggerEl)
 
-
+  triggerEl.addEventListener('click', event => {
+    event.preventDefault()
+    tabTrigger.show()
+  })
+})
+    </script>
 </head>
 
 <body>
@@ -23,7 +34,7 @@
     <nav class=" navbar navbar-expand-md navbar-light bg-light border-bottom border-5 border-warning">
         <div class="container container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./asset/logo.jpeg" alt="">
+                <img  src="./asset/logo.jpeg" alt="">
             </a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -49,68 +60,112 @@
             </div>
         </div>
     </nav>
-    <section class="container container-fluid py-5">
-        <i class="d-inline-block py-2 px-1 tag">
-            魔法科技
-        </i>
-        <h1>
-            拍出會動的照片｜LivePhotos 魔法拍立得
-        </h1>
+    <section class="product container container-fluid py-5">
+        <div class=" mb-4">
+            <i class="d-inline-block py-2 px-3 product-tag">
+                魔法科技
+            </i>
+            <h1 class="product-name">
+                拍出會動的照片｜LivePhotos 魔法拍立得
+            </h1>
+        </div>
         <div class="row">
-            <div class="col-7">
-                <img src="./asset/produt_image.jpeg" alt="">
+            <div class="col-7 rounded">
+                <img class="img-fluid rounded" src="./asset/produt_image.jpeg" alt="">
             </div>
-            <div class="col-5">
-                <h5>
-                    目標 $600,000
-                </h5>
-                <p>
-                    $280,047
-                </p>
-                <div class="progress">
-                    <div class="progress-bar bg-warning text-center" role="progressbar" style="width: 50%"
-                        aria-valuenow="41" aria-valuemin="0" aria-valuemax="100">
-                        <i>
-                            41%
-                        </i>
-                    </div>
-
+            <div class="col-5 sponsor">
+                <div  class="sponsor-price">
+                    <h5 class="sponsor-target">
+                        目標 $600,000
+                    </h5>
+                    <p class="sponsor-finished mt-2">
+                        $280,047
+                    </p>
                 </div>
-                <ul class="row">
+             
+         
+                <div class="progress sponsor-progress mb-3">
+                    <div class="rounded-pill progress-bar bg-warning text-center " role="progressbar" style="width: 41%"
+                        aria-valuenow="41" aria-valuemin="0" aria-valuemax="100">
+                            41%
+                    </div>
+                </div>
+                <ul class="row sponsor-detail">
                     <li class="col-6">
-                        <h5>
+                        <h5 class="sponsor-count-header">
                             贊助人數
                         </h5>
-                        <p>
+                        <p class="sponsor-count-people sponsor-counter">
                             1374 人
                         </p>
                     </li>
-                    <li class="col-6">
-                        <h5>募資倒數</h5>
-                        <p>27 天</p>
+                    <li class="col-6 sponsor-end">
+                        <h5 class="sponsor-count-header">募資倒數</h5>
+                        <p class="sponsor-couunt-day sponsor-counter f-bold">27 天</p>
                     </li>
                 </ul>
-                <ul class="d-flex">
-                    <li class="">
+                <ul class="d-flex sponsor-banner mb-3">
+                    <li class="d-inline-block sponse-logo me-4">
                         <img src="./asset/icon_good01.svg" alt="">
                     </li>
-                    <li class="">
+                    <li class="sponse-logo me-4">
                         <img src="./asset/icon_good02.svg" alt="">
                     </li>
-                    <li class="">
+                    <li class="sponse-logo me-4">
                         <img src="./asset/icon_good03.svg" alt="">
                     </li>
-                    <li class="">
+                    <li class="sponse-logo me-4" >
                         <img src="./asset/icon_good04.svg" alt="">
                     </li>
                 </ul>
-                <div class="p-3 border border-top-0 border-right-0 border-bottom-0 border-3 border-warning border-left">
+                <div class="rounded sponsor-reminder p-3 border-3 border-start border-warning border-left mb-4">
                     <p>專案募資中!</p>
                     在 2021/06/14 23:59 募資結束
+                </div>
+                <a href="#" class="btn btn-primary w-100 rounded-pill sponsor-btn border-0">
+                    贊助專案
+                </a>
+                <div class="row gx-2 sponsor-social mt-2">
+                    <div class="col-7 ">
+                        <a href="" class="sponsor-follow d-block btn rounded-pill ">
+                            <i class="fa-solid fa-heart me-1"></i>
+                            追蹤專案
+                        </a>
+                    </div>
+                    <div class="col-5 ">
+                        <a href="" class="sponsor-share d-block btn rounded-pill">
+                            <i class="fa-solid fa-share-nodes"></i>
+                            分享
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
+    </section>
+    <section class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">專案介紹</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">常見問答</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">目前進度</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>留言</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+          </div>
     </section>
 
 </body>

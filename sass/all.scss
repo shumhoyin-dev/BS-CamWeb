@@ -149,4 +149,136 @@ a {
 
 
 
+
+}
+
+
+.project {
+
+
+
+    &-title {
+        font-size: 1.5rem;
+        color: #494846;
+        letter-spacing: 1.92px;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+
+
+    &-description {
+        font-size: 1rem;
+        color: #494846;
+        text-align: justify;
+        line-height: 2;
+        font-weight: 600;
+    }
+}
+
+.form {
+
+    &-header {
+
+        &::before {
+            content: "";
+            display: block;
+            width: 40%;
+            height: 5px;
+            background: $primary;
+            left: 0;
+            top: 50%;
+            position: absolute;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 40%;
+            height: 5px;
+            background: $primary;
+            right: 0;
+            top: 50%;
+            position: absolute;
+        }
+    }
+
+    &-control {
+        background: #F7F7F7;
+        box-shadow: none;
+        border: 0;
+        border-color: none;
+    }
+
+    &-control:focus,
+    &-control:active {
+        background: #F7F7F7;
+        border: 0;
+        border-color: none;
+        box-shadow: none;
+    }
+
+    &-placeholder {
+        color: #999999;
+    }
+
+    &-submit {
+        background: $primary;
+        color: #494846;
+        font-weight: bold;
+        font-size: 1.25rem;
+        line-height: 1.45;
+    }
+
+
+}
+
+.company {
+    &-card {}
+
+    &-detail {
+        h3 {
+            font-size: 1.25rem;
+            color: #494846;
+            font-weight: bold;
+        }
+    }
+
+    &-slogan {
+        font-size: 1rem;
+        color: #373A3C;
+        text-align: justify;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+
+    &-contact-us {
+        color: #858377;
+        border: 2px solid #858377;
+        font-size: 0.75rem;
+        line-height: 1.13;
+    }
+
+    &-social {
+        i {
+            font-size: 30px;
+            color: #858377;
+        }
+    }
+}
+
+
+.plan-header {
+    font-size: 1.25rem;
+    line-height: 1.81;
+}
+
+
+footer {
+    background: #494846;
+    color: white;
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
 }

@@ -59,7 +59,8 @@ table {
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -217,7 +218,8 @@ a {
 
 .form-control {
   background: #F7F7F7;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: 0;
   border-color: none;
 }
@@ -226,7 +228,8 @@ a {
   background: #F7F7F7;
   border: 0;
   border-color: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .form-placeholder {
@@ -270,6 +273,45 @@ a {
 .plan-header {
   font-size: 1.25rem;
   line-height: 1.81;
+}
+
+.card-title {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.card-price {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+.card-quantity {
+  background-color: #858377;
+  color: white;
+  display: inline-block;
+}
+
+.card-count-sponsor {
+  background-color: #E8E8DB;
+  color: #858377;
+  display: inline-block;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #858377;
+  line-height: 1.5;
+}
+
+.nav-pills .nav-link {
+  color: #636057;
+  border-radius: 0;
+}
+
+.nav-pills .nav-link.active {
+  color: #636057;
+  background-color: transparent;
+  border-bottom: 2px solid #FFDF65;
 }
 
 footer {

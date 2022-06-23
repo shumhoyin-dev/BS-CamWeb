@@ -273,6 +273,53 @@ a {
 }
 
 
+.card{
+    &-title{
+    
+            font-size: 1.125rem;
+            line-height: 1.5;  
+    }
+
+    &-price{
+        font-size: 1.5rem;
+        line-height: 1.7;
+    }
+
+
+    &-quantity{
+        background-color: #858377;
+        color:white;
+        display:inline-block;
+       }
+
+    &-count{
+       &-sponsor{
+           background-color: #E8E8DB;
+           color:#858377;
+           display:inline-block;  
+       }
+
+    }
+
+    &-text{
+        font-size: 1rem;
+        color:#858377;
+        line-height: 1.5;
+    }
+}
+.nav-pills{
+    .nav-link{
+        color:#636057;
+        border-radius: 0;
+        &.active{
+            color:#636057;
+            background-color: transparent;
+            border-bottom: 2px solid $primary;
+        }
+    }
+}
+
+
 footer {
     background: #494846;
     color: white;

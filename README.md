@@ -11,9 +11,7 @@ Design gragh: [a link](https://hexschool.github.io/boootstrap5WebLayout/)
 License related to Hexschool
 
 ```
-[An Internal Link](/guides/content/editing-an-existing-page)
-
- 
+[https://hexschool.github.io/boootstrap5WebLayout/](https://hexschool.github.io/boootstrap5WebLayout/)
 
  
 
